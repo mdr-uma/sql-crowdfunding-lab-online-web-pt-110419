@@ -36,6 +36,7 @@ def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_th
    GROUP BY users.name
    ORDER BY total_pledges;"
    #why AS total_pledges need to be there to pass?
+   #because when we create new column for pledges.amount we dont have name for that so we create name AS...
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
